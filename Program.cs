@@ -11,16 +11,16 @@ namespace ProjetLINQ_2
         {
             int[] numbers = { 1, 2, 2, 2, 4, 2, 6, 7, 8, 8, 9, 0, 3 };
 
-            var myQuery = from nb in numbers where nb > 3 select nb; // requete type MySQL
+            var myQuery = from nb in numbers where nb > 2 select nb; // requete type MySQL
 
             Console.WriteLine("------");
-            foreach(var nb in numbers.Distinct()) // Distinct
+            foreach (var nb in numbers.Distinct()) // Distinct (pas en double)
             {
                 Console.WriteLine(nb);
             }
 
             Console.WriteLine("------");
-            foreach(var nb in myQuery) 
+            foreach (var nb in myQuery)
             {
                 Console.WriteLine(nb);
             }
